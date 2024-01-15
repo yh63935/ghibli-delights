@@ -1,0 +1,23 @@
+{
+  "name": "restaurant-page-webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yh63935/restaurant-page-webpack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yh63935/restaurant-page-webpack/issues"
+  },
+  "homepage": "https://github.com/yh63935/restaurant-page-webpack#readme",
+  "devDependencies": {
+    "webpack-cli": "^5.1.4",
+    "wepack": "^0.0.1"
+  }
+}
