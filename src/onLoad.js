@@ -1,5 +1,5 @@
 function createHome() {
-    const content = document.querySelector('.content');
+    const content = document.querySelector('body');
 
     const h1 = document.createElement('h1');
     h1.innerText = 'Ghibli Delights Cafe';
@@ -12,7 +12,7 @@ function createHome() {
 
     content.append(h1);
     content.append(h2);
-    content.append(h3);
+    content.append(description);
 
 }
 
