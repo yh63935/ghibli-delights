@@ -12,7 +12,7 @@ function createHome() {
 
     content.append(h1);
     content.append(h2);
-    content.append(h3);
+    content.append(description);
 
 }
 
