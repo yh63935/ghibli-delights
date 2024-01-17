@@ -1,4 +1,6 @@
 
+import createHeading from '../createHeading.js';
+
 // All contact options
 const contactOptions = {
     Phone: '408-991-3934',
@@ -24,11 +26,7 @@ function createContactOption(contactMethod, contact) {
 }
 // Render contact page
 function renderContact() {
-    // this might be better as another function
-    const h1 = document.createElement('h1');
-    h1.innerText = 'Contact Us';
-    const body = document.querySelector('body');
-    body.append(h1);
+    createHeading('Contact Us');
     Object.entries(contactOptions).forEach(([contactMethod, contact]) => {
         body.append(createContactOption(contactMethod, contact));
         console.log(contactMethod, contact)
