@@ -1,4 +1,5 @@
-import {createEl} from './components.js';
+import {createEl} from "./components.js";
+
 
 function createNavBar() {
     const body = document.querySelector('body');
