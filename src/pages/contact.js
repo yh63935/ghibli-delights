@@ -1,5 +1,5 @@
 
-import createHeading from '../createHeading.js';
+import {createHeading} from '../components.js';
 
 // All contact options
 const contactOptions = {
