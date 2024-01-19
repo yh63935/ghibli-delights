@@ -1,4 +1,4 @@
-import createHeading from '../createHeading.js';
+import {createHeading} from '../components.js';
 
 const menuItems = [{
     dish: "Ponyo's Ramen",
