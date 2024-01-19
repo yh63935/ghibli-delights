@@ -1,3 +1,5 @@
+import createHeading from '../createHeading.js';
+
 const menuItems = [{
     dish: "Ponyo's Ramen",
     movie: "Ponyo",
@@ -29,4 +31,35 @@ const menuItems = [{
     description: "Restore your strength with this onigiri and remember that you can overcome difficulties. Choices of salmon, tuna, and onigiri."
 }]
 
+// Would it be better to create a class for creating item containers? then extended classes for menu items/contacts?
+function createMenuItem(dish, movie, price, desc) {
+    const menuContainer = document.createElement('div');
+    menuContainer.classList.add('menu-item');
 
+    const h2 = document.createElement('h2');
+    h2.innerText = dish;
+    menuContainer.append(h2)
+
+    const movieTitle = document.createElement('p');
+    movieTitle.innerText = movie;
+    menuContainer.append(movieTitle);
+
+    const pricing = document.createElement('p');
+    pricing.innerText = price;
+    menuContainer.append(price);
+
+    const description = document.createElement('p');
+    description.innerText = desc;
+    menuContainer.append(description);
+
+    return menuContainer;
+}
+
+function renderMenu() {
+    createHeading("Menu");
+    menuItems.forEach(item=> {
+        body.append(createMenuItem(item.dish, item.movie, item.price, item.desc));
+    })
+}
+
+export default renderMenu;
