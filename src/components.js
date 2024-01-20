@@ -4,9 +4,10 @@ function createHeading(heading) {
     main.append(h1);
 }
 
-function createEl(el, text) {
+function createEl(el, text, className) {
     const element = document.createElement(el);
     element.innerText = text;
+    element.classList.add(className)
     return element;
 }
 
