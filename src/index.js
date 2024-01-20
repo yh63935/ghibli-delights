@@ -1,13 +1,7 @@
 import createHome from './onLoad.js';
 import renderContact from './pages/contact.js';
 import renderMenu from './pages/menu.js'
-
-<<<<<<< Updated upstream
-createHome();
-renderContact();
-renderMenu();
-
-=======
+import createNavBar from './navBar.js';
 
 function initializeWebsite() {
     const header = document.createElement('header');
@@ -50,5 +44,4 @@ header.addEventListener("click", (e) => {
     }
 })
 
->>>>>>> Stashed changes
 console.log("Webpack succeeded")
