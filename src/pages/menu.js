@@ -57,9 +57,9 @@ function createMenuItem(dish, movie, price, desc) {
 
 function renderMenu() {
     createHeading("Menu");
-    const body = document.querySelector("body");
+    const main = document.querySelector("main");
     menuItems.forEach(item=> {
-        body.append(createMenuItem(item.dish, item.movie, item.price, item.description));
+        main.append(createMenuItem(item.dish, item.movie, item.price, item.description));
     })
 }
 

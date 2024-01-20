@@ -1,7 +1,7 @@
 import {createEl} from "./components.js";
 
 function createHome() {
-    const content = document.querySelector('body');
+    const content = document.querySelector('main');
 
     const h1 = createEl('h1', 'Ghibli Delights Cafe');
     const h2 = createEl('h2', 'Where your tastebuds are transported into the heartwarming scenes of Ghibli films');
