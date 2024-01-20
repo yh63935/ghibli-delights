@@ -12,7 +12,18 @@ function createEl(el, text, parent, className) {
     parent.append(element);
 }
 
-    return element;
+// Create the website nav bar
+function createNavBar() {
+    const body = document.querySelector('body');
+    const navBar = document.createElement('nav');
+    const navList = document.createElement('ul');
+  
+    createEl('li', 'Home', navList, 'home');
+    createEl('li', 'Menu', navList, 'menu');
+    createEl('li', 'Contact', navList, 'contact');
+
+    navBar.append(navList);
+    return navBar;
 }
 
-export {createHeading, createEl};
+export {createHeading, createEl, createNavBar};
