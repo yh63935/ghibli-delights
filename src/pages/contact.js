@@ -10,22 +10,17 @@ const contactOptions = {
 }
 
 // Create a contact div for each method of contact
-// Debate whether to turn into a class
 function createContactOption(contactMethod, contact) {
     const contactContainer = document.createElement('div');
     contactContainer.classList.add('contact');
 
-    const h2 = document.createElement('h2');
-    h2.innerText = contactMethod;
-    contactContainer.append(h2)
-
-    const description = document.createElement('p');
-    description.innerText = contact;
-    contactContainer.append(description);
+    createEl('h2', contactMethod, contactContainer);
+    createEl('p', contact, contactContainer);
 
     return contactContainer;
 }
-// Render contact page
+
+// Render contact page with all contact options
 function renderContact() {
     createHeading('Contact Us');
     const main = document.querySelector("main");

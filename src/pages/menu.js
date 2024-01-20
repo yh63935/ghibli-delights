@@ -1,4 +1,6 @@
 import {createHeading} from '../components.js';
+import {createEl} from "../components.js";
+
 
 const menuItems = [{
     dish: "Ponyo's Ramen",
@@ -36,21 +38,10 @@ function createMenuItem(dish, movie, price, desc) {
     const menuContainer = document.createElement('div');
     menuContainer.classList.add('menu-item');
 
-    const h2 = document.createElement('h2');
-    h2.innerText = dish;
-    menuContainer.append(h2)
-
-    const movieTitle = document.createElement('p');
-    movieTitle.innerText = movie;
-    menuContainer.append(movieTitle);
-
-    const pricing = document.createElement('p');
-    pricing.innerText = price;
-    menuContainer.append(price);
-
-    const description = document.createElement('p');
-    description.innerText = desc;
-    menuContainer.append(description);
+    createEl('h2', dish, menuContainer);
+    createEl('p', movie, menuContainer);
+    createEl('p', price, menuContainer);
+    createEl('p', desc, menuContainer);
 
     return menuContainer;
 }
