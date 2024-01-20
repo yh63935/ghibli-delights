@@ -1,8 +1,10 @@
-import createHome from './onLoad.js';
+import createHome from './pages/home.js';
 import renderContact from './pages/contact.js';
 import renderMenu from './pages/menu.js'
-import createNavBar from './navBar.js';
+import resetPage from './utils.js';
+import { createNavBar } from './components.js';
 
+// Initialize website with navbar and inital page
 function initializeWebsite() {
     const header = document.createElement('header');
     const navBar = createNavBar();
@@ -16,32 +18,16 @@ function initializeWebsite() {
 
 initializeWebsite();
 
-function clearContent() {
-    const main = document.querySelector('main');
-    main.innerHTML = "";
-}
-
+// Render page depending on nav bar item
 const header = document.querySelector('header');
 header.addEventListener("click", (e) => {
-
+    // Get closest nav bar menu item
     const target = e.target.closest('nav li');
-    console.log(target);
 
     if (target) {
-        if(target.classList.contains('home')) {
-            clearContent();
-            createNavBar();
-            createHome();
-        } else if (target.classList.contains('menu')) {
-            clearContent();
-            createNavBar();
-            renderMenu();
-        } else {
-            clearContent();
-            createNavBar();
-            renderContact();
-        }
+        resetPage();
+        target.classList.contains('home') ? createHome()
+        : target.classList.contains('menu') ? renderMenu()
+        : renderContact();
     }
 })
-
-console.log("Webpack succeeded")
