@@ -3,6 +3,12 @@
 
 * {
     box-sizing: border-box;
+    line-height: 1.6;
+}
+
+html {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 18px;
 }
 
 ul {
@@ -29,5 +35,27 @@ nav {
 }
 
 main {
-    margin-top: 80px;
+    margin-top: 8rem;
+}
+
+h1 {
+    font-family: 'Salsa', cursive;
+    font-size: calc(2rem + 2vw);
+    text-align: center;
+}
+
+h2 {
+    margin: 3rem 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+p {
+    width: 60%;
+    margin: auto;
+}
+@media screen and (min-width: 500px) {
+    h2 {
+        font-size: 1.5rem;
+    }
 }
