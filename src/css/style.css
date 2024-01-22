@@ -1,2 +1,33 @@
 @import './base/normalize.css';
 @import './base/reset.css';
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    color: #25387c;
+    text-align: center;
+    padding: calc(2vw + 1.5rem);
+}
+
+nav {
+    background: #82c1ed;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+main {
+    margin-top: 80px;
+}
