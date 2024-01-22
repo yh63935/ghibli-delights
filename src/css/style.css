@@ -1,0 +1,61 @@
+@import './base/normalize.css';
+@import './base/reset.css';
+
+* {
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+html {
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+    color: #25387c;
+    text-align: center;
+    padding: calc(2vw + 1.5rem);
+}
+
+nav {
+    background: #82c1ed;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+main {
+    margin-top: 8rem;
+}
+
+h1 {
+    font-family: 'Salsa', cursive;
+    font-size: calc(2rem + 2vw);
+    text-align: center;
+}
+
+h2 {
+    margin: 3rem 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+p {
+    width: 60%;
+    margin: auto;
+}
+@media screen and (min-width: 500px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+}
