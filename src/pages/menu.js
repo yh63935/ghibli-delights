@@ -63,24 +63,25 @@ function setMenuImage(image, {src,alt}) {
 }
 
 function createMenuItem(dish, movie, img, price, desc) {
-    const menuContainer = document.createElement('div');
-    menuContainer.classList.add('menu-item');
-
-    createEl('h2', dish, menuContainer);
-    createEl('p', movie, menuContainer);
-    const image = createEl('img', "", menuContainer);
+    const menuItem = document.createElement('div');
+    menuItem.classList.add('menu-item');
+    const image = createEl('img', "", menuItem);
     setMenuImage(image, img);
-    createEl('p', price, menuContainer);
-    createEl('p', desc, menuContainer);
 
-    return menuContainer;
+    createEl('h2', dish, menuItem);
+    createEl('p', movie, menuItem);
+    createEl('p', price, menuItem);
+    createEl('p', desc, menuItem);
+
+    return menuItem;
 }
 
 function renderMenu() {
     createHeading("Menu");
     const main = document.querySelector("main");
+    const menuContainer = createEl('div', "", main, "menu-container");
     menuItems.forEach(item=> {
-        main.append(createMenuItem(item.dish, item.movie, item.img, item.price, item.description));
+        menuContainer.append(createMenuItem(item.dish, item.movie, item.img, item.price, item.description));
     })
 }
 
