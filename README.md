@@ -4,3 +4,8 @@ https://uk.style.yahoo.com/style/15-best-food-scenes-film-071128200.html?guce_re
 https://aminoapps.com/c/studio-ghibli/page/blog/yum-yum-onigiri/Bxmm_aKiwudPgnGq3LxPVL1JNbXbWoJKpk
 
 [https://terribletriocreations.tumblr.com/post/107707695889/satsukis-bento-box-i-want-to-tell-you-about](https://www.seriouseats.com/studio-ghibli-anime-best-food-scenes)https://www.seriouseats.com/studio-ghibli-anime-best-food-scenes
+
+https://www.pinterest.com/pin/pih-lockscreens--422775483775055129/
+https://www.pinterest.com/pin/hd-wallpaper-howls-moving-castle-studio-ghibli-fantasy-art-clouds-daylight--396598310947695543/
+https://www.pinterest.com/pin/pih-lockscreens--422775483775055129/
+https://www.pinterest.com/pin/1548181130274443/
