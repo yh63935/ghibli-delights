@@ -22,7 +22,7 @@ https://medium.com/@mykle/howls-moving-castle-3a45301a1e52
 
   background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 100%);
 
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.5) 100%),
-              url('your-image-url.jpg') center top / cover no-repeat;
+linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 0) 100%),
+              url('your-image-url.jpg') 
 
               rgb(109, 197, 209)
