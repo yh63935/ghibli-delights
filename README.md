@@ -26,3 +26,4 @@ linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 7
               url('your-image-url.jpg') 
 
               rgb(109, 197, 209)
+              161, 202, 108
