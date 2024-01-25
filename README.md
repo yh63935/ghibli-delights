@@ -15,5 +15,5 @@ https://fanboysmarketplace.com/what-all-fanboys-know-about-howls-moving-castle/
 
 https://medium.com/@mykle/howls-moving-castle-3a45301a1e52
 
-url('your-image-url.jpg') center top / cover no-repeat,
+ background: url('your-image-url.jpg') center top / cover no-repeat,
               linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 30%, aqua 100%);
