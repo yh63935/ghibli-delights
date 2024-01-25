@@ -54,8 +54,44 @@ p {
     width: 60%;
     margin: auto;
 }
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    width: 100%;
+    padding: 3rem calc(2rem + 1vw);
+}
+
+.menu-item h2 {
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.menu-item p {
+    width: unset;
+}
+
+.menu-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
 @media screen and (min-width: 500px) {
     h2 {
         font-size: 1.5rem;
     }
+}
+
+@media screen and (min-width: 992px) {
+    .menu-item {
+        width: 50%;
+        padding: 3rem 2rem;
+    }
+    .menu-item img {
+        height: calc(400px + 2vh);
+    }
+    
 }
