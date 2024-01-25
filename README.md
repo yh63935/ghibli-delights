@@ -10,3 +10,7 @@ https://www.pinterest.com/pin/hd-wallpaper-howls-moving-castle-studio-ghibli-fan
 https://www.pinterest.com/pin/pih-lockscreens--422775483775055129/
 https://www.pinterest.com/pin/1548181130274443/
 https://wallpapers.com/wallpapers/studio-ghibli-howl-s-moving-castle-j40hqc63s09xvdtw.html
+
+https://fanboysmarketplace.com/what-all-fanboys-know-about-howls-moving-castle/
+
+https://medium.com/@mykle/howls-moving-castle-3a45301a1e52
