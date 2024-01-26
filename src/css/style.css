@@ -11,25 +11,6 @@ html {
     font-size: 18px;
 }
 
-body {
-    background-image: url("./assets/background.jpg");
-    background-size: 150%;
-    background-repeat: no-repeat;
-    background-position-x: -70px;
-    position: relative;
-}
-
-body::after {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 18%;
-    content: "";
-    z-index: -1;
-    background: linear-gradient(to bottom, rgb(109, 197, 209) 0%, rgb(161, 202, 108) 70%, rgb(255, 255, 255) 100%);
-    bottom: 0;
-}
-
 ul {
     display: flex;
     align-items: center;
@@ -55,10 +36,6 @@ nav {
 
 main {
     margin-top: 8rem;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 3rem;
-    margin-right: 10%;
-    margin-left: 10%;
 }
 
 h1 {
@@ -68,10 +45,13 @@ h1 {
 }
 
 h2 {
-    margin: 2rem;
+    margin: 3rem 2rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
 p {
+    width: 60%;
     margin: auto;
 }
 
@@ -85,11 +65,13 @@ p {
     padding: 3rem calc(2rem + 1vw);
 }
 
-h2 {
+.menu-item h2 {
     margin: 0;
     margin-top: 1rem;
-    font-size: 1rem;
-    text-align: center;
+}
+
+.menu-item p {
+    width: unset;
 }
 
 .menu-item img {
