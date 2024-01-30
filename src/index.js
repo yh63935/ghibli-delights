@@ -1,3 +1,5 @@
+import './css/style.scss';
+
 import createHome from './pages/home.js';
 import renderContact from './pages/contact.js';
 import renderMenu from './pages/menu.js'

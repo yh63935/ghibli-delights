@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/yh63935/restaurant-page-webpack#readme",
   "devDependencies": {
+    "css-loader": "^6.9.1",
+    "sass": "^1.70.0",
+    "sass-loader": "^14.0.0",
+    "style-loader": "^3.3.4",
     "webpack-cli": "^5.1.4",
     "wepack": "^0.0.1"
   }
