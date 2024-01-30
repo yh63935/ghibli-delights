@@ -11,22 +11,22 @@ const contactOptions = {
 
 // Create a contact div for each method of contact
 function createContactOption(contactMethod, contact) {
-    const contactContainer = document.createElement('div');
-    contactContainer.classList.add('contact');
+    const contactOption = document.createElement('div');
+    contactOption.classList.add('contact-option');
 
-    createEl('h2', contactMethod, contactContainer);
-    createEl('p', contact, contactContainer);
+    createEl('h2', contactMethod, contactOption);
+    createEl('p', contact, contactOption);
 
-    return contactContainer;
+    return contactOption;
 }
 
 // Render contact page with all contact options
 function renderContact() {
     createHeading('Contact Us');
     const main = document.querySelector("main");
+    const contactContainer = createEl('div', "", main, "contact-container")
     Object.entries(contactOptions).forEach(([contactMethod, contact]) => {
-        main.append(createContactOption(contactMethod, contact));
-        console.log(contactMethod, contact)
+        contactContainer.append(createContactOption(contactMethod, contact));
     })
 }
 

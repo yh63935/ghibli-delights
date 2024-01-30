@@ -10,6 +10,7 @@ function createEl(el, text, parent, className) {
     element.innerText = text;
     element.classList.add(className)
     parent.append(element);
+    return element;
 }
 
 // Create the website nav bar
