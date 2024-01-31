@@ -8,7 +8,10 @@
 
 html {
     font-family: 'Montserrat', 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 12px;
+    @media screen and (min-width: 992px) {
+        font-size: 14px;
+    }
 }
 
 body {
@@ -19,16 +22,16 @@ body {
     position: relative;
 }
 
-body::after {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 18%;
-    content: "";
-    z-index: -1;
-    background: linear-gradient(to bottom, rgb(109, 197, 209) 0%, rgb(161, 202, 108) 70%, rgb(255, 255, 255) 100%);
-    bottom: 0;
-}
+// body::after {
+//     position: absolute;
+//     left: 0;
+//     right: 0;
+//     top: 18%;
+//     content: "";
+//     z-index: -1;
+//     background: linear-gradient(to bottom, rgb(109, 197, 209) 0%, rgb(161, 202, 108) 70%, rgb(255, 255, 255) 100%);
+//     bottom: 0;
+// }
 
 ul {
     display: flex;
@@ -68,7 +71,9 @@ h1 {
 }
 
 h2 {
-    margin: 2rem;
+    margin: 0.75rem 0;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 p {
@@ -82,34 +87,29 @@ p {
 
 .menu-item {
     width: 100%;
-    padding: 3rem calc(2rem + 1vw);
-}
-
-h2 {
-    margin: 0;
-    margin-top: 1rem;
-    font-size: 1rem;
-    text-align: center;
-}
-
-.menu-item img {
-    width: 100%;
-    object-fit: cover;
-}
-
-@media screen and (min-width: 500px) {
-    h2 {
-        font-size: 1.5rem;
-    }
-}
-
-@media screen and (min-width: 992px) {
-    .menu-item {
-        width: 50%;
-        padding: 3rem 2rem;
-    }
-    .menu-item img {
-        height: calc(400px + 2vh);
+    flex-direction: column;
+    
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: calc(200px + 2rem);
     }
     
+    @media screen and (min-width: 600px) {
+        flex-direction: column;
+        width: 50%;
+        padding: 1rem;
+    }
+
+    @media screen and (min-width: 992px) {
+        width: calc(100%/3) 
+    }
 }
+
+.contact-option {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
