@@ -15,8 +15,6 @@ function createEl(el, text, className) {
         element.classList.add(className);
     }
 
-    parent.append(element);
-
     return element;
 }
 
