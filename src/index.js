@@ -1,5 +1,5 @@
 import './css/style.scss';
-
+import background from 'Images/background.jpg';
 import createHome from './pages/home.js';
 import renderContact from './pages/contact.js';
 import renderMenu from './pages/menu.js'

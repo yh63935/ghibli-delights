@@ -1,8 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'development',
-  entry: './src/index.js',
+  entry: ['./src/index.js', "./src/css/style.scss"],
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
@@ -17,15 +16,34 @@ module.exports = {
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
           type: 'asset/resource',
+          generator: {
+            filename: 'assets/[name][ext][query]',
+          },  
+        },
+        {
+          test: /\.js$/,
+          exclude: /node_modules/,
+          use: [],
         },
         {
           test: /\.scss$/,
+          exclude: /node_modules/,
+          type: "asset/resource",
+          generator: {
+            filename: "style.css",
+          },
           use: [
-            'style-loader',
-            'css-loader',
-            'sass-loader'
-          ]
-        }  
-    ]
-  }
+            {
+              loader: "sass-loader",
+              options: {
+                additionalData: `
+                  @import 'base/normalize.css';
+                  @import 'base/reset.css';
+                `,
+              },
+            },
+          ],
+        },
+      ],
+    }
 };
