@@ -8,7 +8,6 @@ import bento from 'Images/bento.jpg';
 
 const menuItems = [{
     dish: "Ponyo's Ramen",
-    movie: "Ponyo",
     img: {
         src: ramen,
         alt: "Steaming bowl of ramen with ham and green onions"
@@ -18,7 +17,6 @@ const menuItems = [{
 }, 
 {
     dish: "Kiki's Pancakes", 
-    movie: "Kiki's Delivery Service",
     img: {
         src: pancakes,
         alt: "Fluffy pancakes topped with butter with cherry tomatoes and sausages"
@@ -28,7 +26,6 @@ const menuItems = [{
 }, 
 {
     dish: "Sophie's Breakfast Spread", 
-    movie: "Howl's Moving Castle",
     img: {
         src: breakfast,
         alt: "Boy gulping down eggs and bacon"
@@ -38,7 +35,6 @@ const menuItems = [{
 }, 
 {
     dish: "Satsuki's Bento", 
-    movie: "My Neighbor Totoro",
     img: {
         src: bento,
         alt: "Bento with salted plums and fish"
@@ -48,7 +44,6 @@ const menuItems = [{
 }, 
 {
     dish: "Haku's Onigiri", 
-    movie: "Spirited Away",
     img: {
         src: onigiri,
         alt: "Girl Chihiro stuffing her face with onigiri"
@@ -62,14 +57,13 @@ function setMenuImage(image, {src,alt}) {
     image.alt = alt;
 }
 
-function createMenuItem(dish, movie, img, price, desc) {
+function createMenuItem(dish, img, price, desc) {
     const menuItem = document.createElement('div');
     menuItem.classList.add('menu-item');
     const image = createEl('img', "", menuItem);
     setMenuImage(image, img);
 
     createEl('h2', dish, menuItem);
-    createEl('p', movie, menuItem);
     createEl('p', price, menuItem);
     createEl('p', desc, menuItem);
 
@@ -81,7 +75,7 @@ function renderMenu() {
     const main = document.querySelector("main");
     const menuContainer = createEl('div', "", main, "menu-container");
     menuItems.forEach(item=> {
-        menuContainer.append(createMenuItem(item.dish, item.movie, item.img, item.price, item.description));
+        menuContainer.append(createMenuItem(item.dish, item.img, item.price, item.description));
     })
 }
 
