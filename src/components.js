@@ -1,16 +1,23 @@
 // Create the title heading for each page
 function createHeading(heading) {
     const main = document.querySelector('main');
-    const h1 = createEl('h1', heading, main);
+    const h1 = createEl('h1', heading);
+    appendEl(main, h1)
 }
 
 // Create any element
-function createEl(el, text, parent, className) {
+function createEl(el, text, className) {
     const element = document.createElement(el);
     element.innerText = text;
     element.classList.add(className)
-    parent.append(element);
     return element;
+}
+
+// Append element(s) to a parent
+function appendEl(parent, ...elements) {
+    elements.forEach(el=> {
+        parent.append(el)
+    });
 }
 
 // Create the website nav bar
@@ -19,12 +26,14 @@ function createNavBar() {
     const navBar = document.createElement('nav');
     const navList = document.createElement('ul');
   
-    createEl('li', 'Home', navList, 'home');
-    createEl('li', 'Menu', navList, 'menu');
-    createEl('li', 'Contact', navList, 'contact');
+    const home = createEl('li', 'Home', 'home');
+    const menu = createEl('li', 'Menu', 'menu');
+    const contact = createEl('li', 'Contact', 'contact');
 
-    navBar.append(navList);
+    appendEl(navList, home, menu, contact);
+    appendEl(navBar, navList);
+
     return navBar;
 }
 
-export {createHeading, createEl, createNavBar};
+export {createHeading, createEl, appendEl, createNavBar};
