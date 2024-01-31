@@ -9,7 +9,14 @@ function createHeading(heading) {
 function createEl(el, text, className) {
     const element = document.createElement(el);
     element.innerText = text;
-    element.classList.add(className)
+    
+    // Only add class if provided
+    if(className) {
+        element.classList.add(className);
+    }
+
+    parent.append(element);
+
     return element;
 }
 
