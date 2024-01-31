@@ -1,5 +1,6 @@
 import {createHeading} from '../components.js';
 import {createEl} from "../components.js";
+import { appendEl } from '../components.js';
 import breakfast from 'Images/breakfast.jpeg';
 import pancakes from 'Images/pancakes.jpg';
 import ramen from 'Images/ramen.jpg';
@@ -58,14 +59,16 @@ function setMenuImage(image, {src,alt}) {
 }
 
 function createMenuItem(dish, img, price, desc) {
-    const menuItem = document.createElement('div');
-    menuItem.classList.add('menu-item');
-    const image = createEl('img', "", menuItem);
+    const menuItem = createEl('div', '', 'menu-item');
+    const image = document.createElement('img');
+    appendEl(menuItem, image);
     setMenuImage(image, img);
 
-    createEl('h2', dish, menuItem);
-    createEl('p', price, menuItem);
-    createEl('p', desc, menuItem);
+    const dishEl = createEl('h2', dish);
+    const priceEl = createEl('p', price);
+    const descEl = createEl('p', desc);
+
+    appendEl(menuItem, dishEl, priceEl, descEl);
 
     return menuItem;
 }
@@ -73,9 +76,11 @@ function createMenuItem(dish, img, price, desc) {
 function renderMenu() {
     createHeading("Menu");
     const main = document.querySelector("main");
-    const menuContainer = createEl('div', "", main, "menu-container");
+    const menuContainer = createEl('div', "", "menu-container");
+    appendEl(main, menuContainer);
     menuItems.forEach(item=> {
-        menuContainer.append(createMenuItem(item.dish, item.img, item.price, item.description));
+        const menuItem = createMenuItem(item.dish, item.img, item.price, item.description);
+        appendEl(menuContainer, menuItem);
     })
 }
 

@@ -1,6 +1,7 @@
 
 import {createHeading} from '../components.js';
 import { createEl } from '../components.js';
+import { appendEl } from '../components.js';
 
 // All contact options
 const contactOptions = {
@@ -11,11 +12,11 @@ const contactOptions = {
 
 // Create a contact div for each method of contact
 function createContactOption(contactMethod, contact) {
-    const contactOption = document.createElement('div');
-    contactOption.classList.add('contact-option');
+    const contactOption = createEl('div', '', 'contact-option');
 
-    createEl('h2', contactMethod, contactOption);
-    createEl('p', contact, contactOption);
+    const contactMethodEL = createEl('h2', contactMethod);
+    const contactEl = createEl('p', contact);
+    appendEl(contactOption, contactMethodEL, contactEl)
 
     return contactOption;
 }
@@ -24,9 +25,11 @@ function createContactOption(contactMethod, contact) {
 function renderContact() {
     createHeading('Contact Us');
     const main = document.querySelector("main");
-    const contactContainer = createEl('div', "", main, "contact-container")
+    const contactContainer = createEl('div', "", "contact-container")
+    appendEl(main, contactContainer);
     Object.entries(contactOptions).forEach(([contactMethod, contact]) => {
-        contactContainer.append(createContactOption(contactMethod, contact));
+        const contactOption = createContactOption(contactMethod, contact);
+        appendEl(contactContainer, contactOption);
     })
 }
 

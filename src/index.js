@@ -5,16 +5,18 @@ import renderContact from './pages/contact.js';
 import renderMenu from './pages/menu.js'
 import resetPage from './utils.js';
 import { createNavBar } from './components.js';
+import { appendEl } from './components.js';
+
 
 // Initialize website with navbar and inital page
 function initializeWebsite() {
     const header = document.createElement('header');
     const navBar = createNavBar();
-    header.append(navBar);
+    appendEl(header, navBar);
+    
     const main = document.createElement('main');
     const body = document.querySelector('body');
-    body.append(header);
-    body.append(main);
+    appendEl(body, header, main);
     createHome();
 }
 
