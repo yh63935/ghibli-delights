@@ -27,6 +27,8 @@
 ### Description
 I'm a huge fan of Ghibli Studio and if you haven't gathered from my blog-page project, food! This website is for a cafe that serves the food featured in Ghibli Studio movies. It's also responsive, so feel free to resize the screen if you'd like :)
 
+[See live website hosted on Github Pages](https://yh63935.github.io/restaurant-page-webpack/) 
+
 ### Motivation
 I wanted to learn how to use Webpack and get experience in using it. This website uses Webpack to bundle its files and renders each page separately with its elements when the appropriate option in the nav bar is pressed. I wanted to focus on modularity and writing organized code for practice. 
 
@@ -50,10 +52,22 @@ Another thing I thought about was how to organize the code. I focused on creatin
 
 Quick start:
 
-```
-$ npm install
-$ npm start
-````
+
+1. Clone this github repository on your local machine with HTTPS:// or SSH (SSH is provided below, use HTTPS if preferred)
+
+   ```$ git clone git@github.com:yh63935/restaurant-page-webpack.git```
+
+2. Install all necessary dependencies
+
+   ```$ npm install```
+
+3. Build dist/ files on your local machine
+
+   ```$ npm start```
+
+4. Open up index.html on your local to view your own copy
+
+5. Alternatively go to [https://yh63935.github.io/restaurant-page-webpack/](https://yh63935.github.io/restaurant-page-webpack/) to see a live demo hosted on Github Pages.
 
 
 <!-- CONTACT -->
@@ -61,7 +75,7 @@ $ npm start
 
 Amelia Ho - [Amelia Ho Linkedin](https://www.linkedin.com/in/ameliahoyp/))
 
-Project Link: [https://github.com/yh63935/chrome-extension-save-input](https://github.com/yh63935/chrome-extension-save-input)
+Project Link: [https://github.com/yh63935/restaurant-page-webpack]([https://github.com/yh63935/chrome-extension-save-input](https://github.com/yh63935/restaurant-page-webpack))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -71,25 +85,28 @@ Project Link: [https://github.com/yh63935/chrome-extension-save-input](https://g
 ## Acknowledgments
 Image credits: 
 
+* [https://fantasyfeasts.tumblr.com/post/161136080775/kikis-pancakes-from-kikis-delivery-service-by](https://fantasyfeasts.tumblr.com/post/161136080775/kikis-pancakes-from-kikis-delivery-service-by)
+* [https://uk.style.yahoo.com/style/15-best-food-scenes-film-071128200.html?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAANpalyeE_Q9VSpFXp6wXT93C2MjEyorzO0sY1n3W0TbP7anHOYiBsBkhJufMGyQvI6lJfCbF2qikbghGENu04AovG6vM2CZ-QjXzbpoBZoIq6b_nHY5Jr7CwTcJ1Deyo_V6XhYtbQm8EDmJH5OARriDcHlIm5tjYrhDor9SdpgWR](https://uk.style.yahoo.com/style/15-best-food-scenes-film-071128200.html?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAANpalyeE_Q9VSpFXp6wXT93C2MjEyorzO0sY1n3W0TbP7anHOYiBsBkhJufMGyQvI6lJfCbF2qikbghGENu04AovG6vM2CZ-QjXzbpoBZoIq6b_nHY5Jr7CwTcJ1Deyo_V6XhYtbQm8EDmJH5OARriDcHlIm5tjYrhDor9SdpgWR)
+* [https://aminoapps.com/c/studio-ghibli/page/blog/yum-yum-onigiri/Bxmm_aKiwudPgnGq3LxPVL1JNbXbWoJKpk
+](https://aminoapps.com/c/studio-ghibli/page/blog/yum-yum-onigiri/Bxmm_aKiwudPgnGq3LxPVL1JNbXbWoJKpk
+)
+* [https://terribletriocreations.tumblr.com/post/107707695889/satsukis-bento-box-i-want-to-tell-you-about](https://terribletriocreations.tumblr.com/post/107707695889/satsukis-bento-box-i-want-to-tell-you-about)
+* [https://www.seriouseats.com/studio-ghibli-anime-best-food-scenes
+](https://www.seriouseats.com/studio-ghibli-anime-best-food-scenes
+)
+* [https://wallpapers.com/wallpapers/studio-ghibli-howl-s-moving-castle-j40hqc63s09xvdtw.html
+](https://wallpapers.com/wallpapers/studio-ghibli-howl-s-moving-castle-j40hqc63s09xvdtw.html
+)
+
+Other acknowledgements:
 * [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
 * [https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3](https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
-* [https://scrimba.com/learn/learnjavascript](https://scrimba.com/learn/learnjavascript)
-* 
-* [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-* [https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3](https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
-* [https://scrimba.com/learn/learnjavascript](https://scrimba.com/learn/learnjavascript)
+* [https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
 
 
-https://fantasyfeasts.tumblr.com/post/161136080775/kikis-pancakes-from-kikis-delivery-service-by
-https://uk.style.yahoo.com/style/15-best-food-scenes-film-071128200.html?guce_referrer=aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8&guce_referrer_sig=AQAAANpalyeE_Q9VSpFXp6wXT93C2MjEyorzO0sY1n3W0TbP7anHOYiBsBkhJufMGyQvI6lJfCbF2qikbghGENu04AovG6vM2CZ-QjXzbpoBZoIq6b_nHY5Jr7CwTcJ1Deyo_V6XhYtbQm8EDmJH5OARriDcHlIm5tjYrhDor9SdpgWR
-https://aminoapps.com/c/studio-ghibli/page/blog/yum-yum-onigiri/Bxmm_aKiwudPgnGq3LxPVL1JNbXbWoJKpk
 
-[https://terribletriocreations.tumblr.com/post/107707695889/satsukis-bento-box-i-want-to-tell-you-about](https://www.seriouseats.com/studio-ghibli-anime-best-food-scenes)https://www.seriouseats.com/studio-ghibli-anime-best-food-scenes
 
-https://www.pinterest.com/pin/pih-lockscreens--422775483775055129/
-https://www.pinterest.com/pin/hd-wallpaper-howls-moving-castle-studio-ghibli-fantasy-art-clouds-daylight--396598310947695543/
-https://www.pinterest.com/pin/pih-lockscreens--422775483775055129/
-https://www.pinterest.com/pin/1548181130274443/
-https://wallpapers.com/wallpapers/studio-ghibli-howl-s-moving-castle-j40hqc63s09xvdtw.html
 
-https://fanboysmarketplace.com/what-all-fanboys-know-about-howls-moving-castle/
+
+
+
