@@ -1,3 +1,4 @@
+<a name="readme-top"></a>
 # cafe-page-webpack
 ## This is a cafe page centered around Ghibli Studio food. 
 
@@ -24,7 +25,7 @@
 ## About The Project
 
 ### Description
-I'm a huge fan of Ghibli Studio and if you haven't gathered from my blog-page project, food! This website is for a cafe that serves the food featured in Ghibli Studio movies. It's also responsive, so feel free to resize the screen if you'd like :)
+I'm a huge fan of Ghibli Studio and if you haven't gathered from my blog-page project, food! This website is for a cafe that serves the food featured in Ghibli Studio movies. It's also responsive, so feel free to resize the screen if you'd like :) This is 
 
 [See live website hosted on Github Pages](https://yh63935.github.io/cafe-page-webpack/) 
 
@@ -70,7 +71,7 @@ Quick start:
 <!-- CONTACT -->
 ## Contact
 
-Amelia Ho - [Amelia Ho Linkedin](https://www.linkedin.com/in/ameliahoyp/))
+Amelia Ho - [Amelia Ho Linkedin](https://www.linkedin.com/in/ameliahoyp/)
 
 Project Link: [https://github.com/yh63935/cafe-page-webpack](https://github.com/yh63935/cafe-page-webpack))
 
