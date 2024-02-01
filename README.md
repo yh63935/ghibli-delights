@@ -1,5 +1,5 @@
-# restaurant-page-webpack
-# This is cafe page centered around Ghibli Studio food. It uses webPack to bundle files and renders each page separately. 
+# cafe-page-webpack
+## This is a cafe page centered around Ghibli Studio food. 
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -20,14 +20,13 @@
 </details>
 
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
 ### Description
 I'm a huge fan of Ghibli Studio and if you haven't gathered from my blog-page project, food! This website is for a cafe that serves the food featured in Ghibli Studio movies. It's also responsive, so feel free to resize the screen if you'd like :)
 
-[See live website hosted on Github Pages](https://yh63935.github.io/restaurant-page-webpack/) 
+[See live website hosted on Github Pages](https://yh63935.github.io/cafe-page-webpack/) 
 
 ### Motivation
 I wanted to learn how to use Webpack and get experience in using it. This website uses Webpack to bundle its files and renders each page separately with its elements when the appropriate option in the nav bar is pressed. I wanted to focus on modularity and writing organized code for practice. 
@@ -52,10 +51,9 @@ Another thing I thought about was how to organize the code. I focused on creatin
 
 Quick start:
 
-
 1. Clone this github repository on your local machine with HTTPS:// or SSH (SSH is provided below, use HTTPS if preferred)
 
-   ```$ git clone git@github.com:yh63935/restaurant-page-webpack.git```
+   ```$ git clone git@github.com:yh63935/cafe-page-webpack.git```
 
 2. Install all necessary dependencies
 
@@ -67,18 +65,16 @@ Quick start:
 
 4. Open up index.html on your local to view your own copy
 
-5. Alternatively go to [https://yh63935.github.io/restaurant-page-webpack/](https://yh63935.github.io/restaurant-page-webpack/) to see a live demo hosted on Github Pages.
-
+5. Alternatively go to [https://yh63935.github.io/cafe-page-webpack/](https://yh63935.github.io/cafe-page-webpack/) to see a live demo hosted on Github Pages.
 
 <!-- CONTACT -->
 ## Contact
 
 Amelia Ho - [Amelia Ho Linkedin](https://www.linkedin.com/in/ameliahoyp/))
 
-Project Link: [https://github.com/yh63935/restaurant-page-webpack]([https://github.com/yh63935/chrome-extension-save-input](https://github.com/yh63935/restaurant-page-webpack))
+Project Link: [https://github.com/yh63935/cafe-page-webpack](https://github.com/yh63935/cafe-page-webpack))
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 <!-- ACKNOWLEDGMENTS -->
@@ -97,6 +93,7 @@ Image credits:
 * [https://wallpapers.com/wallpapers/studio-ghibli-howl-s-moving-castle-j40hqc63s09xvdtw.html
 ](https://wallpapers.com/wallpapers/studio-ghibli-howl-s-moving-castle-j40hqc63s09xvdtw.html
 )
+
 
 Other acknowledgements:
 * [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
