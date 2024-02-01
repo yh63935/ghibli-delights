@@ -40,12 +40,6 @@ module.exports = {
           use: [
             {
               loader: "sass-loader",
-              options: {
-                additionalData: `
-                  @import 'base/normalize.css';
-                  @import 'base/reset.css';
-                `,
-              },
             },
           ],
         },
