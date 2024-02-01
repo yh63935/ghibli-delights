@@ -2,8 +2,8 @@ import {createNavBar} from './components.js';
 
 // Clear page content
 function clearContent() {
-    const main = document.querySelector('main');
-    main.innerHTML = "";
+    const content = document.querySelector('#content');
+    content.innerHTML = "";
 }
 
 // Reset page and render nav bar

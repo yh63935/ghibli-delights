@@ -1,8 +1,8 @@
 // Create the title heading for each page
 function createHeading(heading) {
-    const main = document.querySelector('main');
+    const content = document.querySelector('#content');
     const h1 = createEl('h1', heading);
-    appendEl(main, h1)
+    appendEl(content, h1)
 }
 
 // Create any element
