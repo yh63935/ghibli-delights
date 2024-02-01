@@ -15,7 +15,10 @@ function initializeWebsite() {
     appendEl(header, navBar);
     
     const main = document.createElement('main');
+    const content = document.createElement('div');
+    content.setAttribute('id', 'content');
     const body = document.querySelector('body');
+    appendEl(main, content);
     appendEl(body, header, main);
     createHome();
 }

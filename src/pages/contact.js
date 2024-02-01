@@ -24,9 +24,9 @@ function createContactOption(contactMethod, contact) {
 // Render contact page with all contact options
 function renderContact() {
     createHeading('Contact Us');
-    const main = document.querySelector("main");
+    const content = document.querySelector("#content");
     const contactContainer = createEl('div', "", "contact-container")
-    appendEl(main, contactContainer);
+    appendEl(content, contactContainer);
     Object.entries(contactOptions).forEach(([contactMethod, contact]) => {
         const contactOption = createContactOption(contactMethod, contact);
         appendEl(contactContainer, contactOption);

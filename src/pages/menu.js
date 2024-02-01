@@ -75,9 +75,9 @@ function createMenuItem(dish, img, price, desc) {
 
 function renderMenu() {
     createHeading("Menu");
-    const main = document.querySelector("main");
+    const content = document.querySelector("#content");
     const menuContainer = createEl('div', "", "menu-container");
-    appendEl(main, menuContainer);
+    appendEl(content, menuContainer);
     menuItems.forEach(item=> {
         const menuItem = createMenuItem(item.dish, item.img, item.price, item.description);
         appendEl(menuContainer, menuItem);
