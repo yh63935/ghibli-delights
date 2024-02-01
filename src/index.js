@@ -3,7 +3,7 @@ import background from 'Images/background.jpg';
 import createHome from './pages/home.js';
 import renderContact from './pages/contact.js';
 import renderMenu from './pages/menu.js'
-import resetPage from './utils.js';
+import { resetPage } from './utils.js';
 import { createNavBar } from './components.js';
 import { appendEl } from './components.js';
 
