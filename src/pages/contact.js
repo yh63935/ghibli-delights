@@ -2,6 +2,7 @@
 import {createHeading} from '../components.js';
 import { createEl } from '../components.js';
 import { appendEl } from '../components.js';
+import { setActivePageClass } from '../utils.js';
 
 // All contact options
 const contactOptions = {
@@ -25,7 +26,8 @@ function createContactOption(contactMethod, contact) {
 function renderContact() {
     createHeading('Contact Us');
     const content = document.querySelector("#content");
-    const contactContainer = createEl('div', "", "contact-container")
+    const contactContainer = createEl('div', "", "contact-container");
+    setActivePageClass('contact', content);
     appendEl(content, contactContainer);
     Object.entries(contactOptions).forEach(([contactMethod, contact]) => {
         const contactOption = createContactOption(contactMethod, contact);

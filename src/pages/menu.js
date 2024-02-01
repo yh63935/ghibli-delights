@@ -1,6 +1,7 @@
 import {createHeading} from '../components.js';
 import {createEl} from "../components.js";
 import { appendEl } from '../components.js';
+import { setActivePageClass } from '../utils.js';
 import breakfast from 'Images/breakfast.jpeg';
 import pancakes from 'Images/pancakes.jpg';
 import ramen from 'Images/ramen.jpg';
@@ -77,6 +78,7 @@ function renderMenu() {
     createHeading("Menu");
     const content = document.querySelector("#content");
     const menuContainer = createEl('div', "", "menu-container");
+    setActivePageClass('menu', content);
     appendEl(content, menuContainer);
     menuItems.forEach(item=> {
         const menuItem = createMenuItem(item.dish, item.img, item.price, item.description);
