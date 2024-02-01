@@ -12,18 +12,3 @@ https://www.pinterest.com/pin/1548181130274443/
 https://wallpapers.com/wallpapers/studio-ghibli-howl-s-moving-castle-j40hqc63s09xvdtw.html
 
 https://fanboysmarketplace.com/what-all-fanboys-know-about-howls-moving-castle/
-
-#6dc5d1
-https://medium.com/@mykle/howls-moving-castle-3a45301a1e52
-
- background: url('your-image-url.jpg') center top / cover no-repeat,
-              linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 30%, aqua 100%);
-
-
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 1) 100%);
-
-linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.7) 70%, rgba(255, 255, 255, 0) 100%),
-              url('your-image-url.jpg') 
-
-              rgb(109, 197, 209)
-              161, 202, 108
