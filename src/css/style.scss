@@ -10,6 +10,7 @@ html {
     font-family: 'Montserrat', 'Open Sans', sans-serif;
     font-size: 12px;
     height: 100%;
+
     @media screen and (min-width: 992px) {
         font-size: 14px;
     }
@@ -48,22 +49,30 @@ nav {
     width: 100%;
 }
 
-main {
-    // margin-top: 8rem;
+#content {
     background: rgba(255,255,255,.8);
     padding: 3rem;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    left: 50%;
     width: 80%;
+    margin: auto;
+
+    &.home, &.contact {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      
+        left: 50%;
+    }
+    &.menu {
+        margin-top: 8rem;
+    }
+
     @media screen and (min-width: 768px) {
         width: 65%;
     }
+
     @media screen and (min-width: 1200px) {
         width: 50%;
     }
-    // margn: auto;
 }
 
 h1 {
@@ -73,7 +82,7 @@ h1 {
 }
 
 h2 {
-    margin: 0.75rem 0;
+    margin: 1rem 0;
     font-size: 1.5rem;
     text-align: center;
     font-weight: 500;
@@ -92,7 +101,16 @@ p {
     width: 100%;
     flex-direction: column;
     margin-bottom: 1.5rem;
- 
+    h2 {
+        margin-bottom: 1rem;
+    }
+
+    p:first-of-type {
+        margin-top: -0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1.2rem;
+    }
+
     img {
         width: 100%;
         object-fit: cover;
@@ -105,10 +123,6 @@ p {
         padding: 1rem;
         margin-bottom: 0;
     }
-
-    @media screen and (min-width: 992px) {
-        width: calc(100%/3) 
-    }
 }
 
 .contact-option {
@@ -119,3 +133,14 @@ p {
     margin-bottom: 2rem;
 }
 
+.home {
+    p {
+        margin-top: 1.5rem;
+    }
+}
+
+.menu {
+    h2 {
+        text-align: left;
+    }
+}
