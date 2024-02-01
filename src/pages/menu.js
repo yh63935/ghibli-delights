@@ -1,5 +1,5 @@
-import {createHeading} from '../components.js';
-import {createEl} from "../components.js";
+import { createHeading } from '../components.js';
+import { createEl } from "../components.js";
 import { appendEl } from '../components.js';
 import { setActivePageClass } from '../utils.js';
 import breakfast from 'Images/breakfast.jpeg';
