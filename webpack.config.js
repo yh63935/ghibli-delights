@@ -15,10 +15,15 @@ module.exports = {
     rules: [
         {
           test: /\.(png|svg|jpg|jpeg|gif)$/i,
-          type: 'asset/resource',
-          generator: {
-            filename: 'assets/[name][ext][query]',
-          },  
+          use: [
+            {
+              loader:'file-loader',
+              options: {
+                outputPath: 'assets',
+                name: '[name].[ext]'
+              }
+            }
+          ] 
         },
         {
           test: /\.js$/,
