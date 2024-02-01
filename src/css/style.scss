@@ -9,6 +9,7 @@
 html {
     font-family: 'Montserrat', 'Open Sans', sans-serif;
     font-size: 12px;
+    height: 100%;
     @media screen and (min-width: 992px) {
         font-size: 14px;
     }
@@ -16,22 +17,13 @@ html {
 
 body {
     background-image: url("./assets/background.jpg");
-    background-size: 150%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position-x: -70px;
+    background-attachment: fixed;
     position: relative;
+    background-position-x: -70px;
+    height: 100%;
 }
-
-// body::after {
-//     position: absolute;
-//     left: 0;
-//     right: 0;
-//     top: 18%;
-//     content: "";
-//     z-index: -1;
-//     background: linear-gradient(to bottom, rgb(109, 197, 209) 0%, rgb(161, 202, 108) 70%, rgb(255, 255, 255) 100%);
-//     bottom: 0;
-// }
 
 ul {
     display: flex;
@@ -57,11 +49,21 @@ nav {
 }
 
 main {
-    margin-top: 8rem;
-    background: rgba(255, 255, 255, 0.8);
+    // margin-top: 8rem;
+    background: rgba(255,255,255,.8);
     padding: 3rem;
-    margin-right: 10%;
-    margin-left: 10%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 80%;
+    @media screen and (min-width: 768px) {
+        width: 65%;
+    }
+    @media screen and (min-width: 1200px) {
+        width: 50%;
+    }
+    // margn: auto;
 }
 
 h1 {
