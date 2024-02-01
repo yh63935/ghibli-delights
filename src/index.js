@@ -7,6 +7,7 @@ import { resetPage } from './utils.js';
 import { createNavBar } from './components.js';
 import { appendEl } from './components.js';
 
+initializeWebsite();
 
 // Initialize website with navbar and inital page
 function initializeWebsite() {
@@ -22,8 +23,6 @@ function initializeWebsite() {
     appendEl(body, header, main);
     createHome();
 }
-
-initializeWebsite();
 
 // Render page depending on nav bar item
 const header = document.querySelector('header');
