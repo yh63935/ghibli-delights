@@ -24,4 +24,6 @@ jobs:
           npm run build
 
       - name: Deploy 🚀
-        run: npm run deploy
+        run: 
+          git pull origin gh-pages
+          npm run deploy
