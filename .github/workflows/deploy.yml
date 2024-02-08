@@ -25,5 +25,5 @@ jobs:
 
       - name: Deploy 🚀
         run: 
-          git pull origin gh-pages
+          git pull origin gh-pages;
           npm run deploy
