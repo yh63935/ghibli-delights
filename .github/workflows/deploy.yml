@@ -25,6 +25,6 @@ jobs:
 
       - name: Deploy 🚀
         run: 
-          git config pull.rebase = true;
+          git config pull.rebase true;
           git pull origin gh-pages;
           npm run deploy
