@@ -16,7 +16,7 @@ jobs:
       - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Install and Build 🔧
         run: |
@@ -24,7 +24,4 @@ jobs:
           npm run build
 
       - name: Deploy 🚀
-        run: 
-          git config pull.rebase true;
-          git pull origin gh-pages;
-          npm run deploy
+        run: npm run deploy
