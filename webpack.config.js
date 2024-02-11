@@ -1,48 +1,55 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: ['./src/index.js', "./src/css/style.scss"],
+  entry: ["./src/index.js", "./src/css/style.scss"],
   output: {
-    filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    filename: "main.js",
+    path: path.resolve(__dirname, "dist"),
   },
   resolve: {
     alias: {
-        Images: path.resolve(__dirname, 'src/css/assets')
-    }
+      Images: path.resolve(__dirname, "src/css/assets"),
+    },
   },
   module: {
     rules: [
-        {
-          test: /\.(png|svg|jpg|jpeg|gif)$/i,
-          use: [
-            {
-              loader:'file-loader',
-              options: {
-                outputPath: 'assets',
-                name: '[name].[ext]'
-              }
-            }
-          ] 
-        },
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          use: [],
-        },
-        {
-          test: /\.scss$/,
-          exclude: /node_modules/,
-          type: "asset/resource",
-          generator: {
-            filename: "style.css",
-          },
-          use: [
-            {
-              loader: "sass-loader",
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              outputPath: "assets",
+              name: "[name].[ext]",
             },
-          ],
+          },
+        ],
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: [],
+      },
+      {
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        type: "asset/resource",
+        generator: {
+          filename: "style.css",
         },
-      ],
-    }
+        use: [
+          {
+            loader: "sass-loader",
+          },
+        ],
+      },
+    ],
+  },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+    compress: true,
+    port: 3000,
+  },
 };
