@@ -39,6 +39,8 @@ The most difficult part of using Webpack with this project was configuring it to
 
 Another thing I thought about was how to organize the code. I focused on creating modules with related code and functionality and even struggled with naming the files appropriately because I wanted the program structure to be readable. I ended up making modules for each page, along with a components and utilities module for functions that would be reused across pages. 
 
+Finally, this was the first time that I used Github Actions to deploy something with an automated workflow. I was able to get some assistance in setting it up and fixing issues that came up, along with adding Webpack Dev Server for live reloading. 
+
 ### Built With
 
 * HTML
