@@ -1,4 +1,4 @@
-import {createNavBar} from './components.js';
+import { createNavBar } from './components.js';
 
 // Set appropriate class on an element for the active page and remove non-current page classes
 function setActivePageClass(currentPage, element) {
