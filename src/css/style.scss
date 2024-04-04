@@ -1,145 +1,146 @@
-@import './base/normalize.scss';
-@import './base/reset.scss';
+@import "./base/normalize.scss";
+@import "./base/reset.scss";
 
 * {
-    box-sizing: border-box;
-    line-height: 1.6;
+  box-sizing: border-box;
+  line-height: 1.6;
 }
 
 html {
-    font-family: 'Montserrat', 'Open Sans', sans-serif;
-    font-size: 12px;
-    height: 100%;
+  font-family: "Montserrat", "Open Sans", sans-serif;
+  font-size: 12px;
+  height: 100%;
 
-    @media screen and (min-width: 992px) {
-        font-size: 14px;
-    }
+  @media screen and (min-width: 992px) {
+    font-size: 14px;
+  }
 }
 
 body {
-    background-image: url("./assets/background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    position: relative;
-    height: 100%;
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  height: 100%;
 }
 
 ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 li {
-    list-style: none;
-    color: #25387c;
-    text-align: center;
-    padding: calc(2vw + 1.5rem);
+  list-style: none;
+  color: #25387c;
+  text-align: center;
+  padding: calc(2vw + 1.5rem);
 }
 
 nav {
-    background: #82c1ed;
-    height: 80px;
-    position: fixed;
-    top: 0;
-    width: 100%;
+  background: #82c1ed;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 #content {
-    background: rgba(255,255,255,.8);
-    padding: 3rem;
-    width: 80%;
-    margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 3rem;
+  width: 80%;
+  margin: auto;
 
-    &.home, &.contact {
-        position: absolute;
-        top: 60%;
-        transform: translate(-50%, -50%);
-      
-        left: 50%;
-    }
-    &.menu {
-        margin-top: 8rem;
-    }
+  &.home,
+  &.contact {
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -50%);
 
-    @media screen and (min-width: 768px) {
-        width: 65%;
-    }
+    left: 50%;
+  }
+  &.menu {
+    margin-top: 8rem;
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: 50%;
-    }
+  @media screen and (min-width: 768px) {
+    width: 65%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 50%;
+  }
 }
 
 h1 {
-    font-family: 'Salsa', cursive;
-    font-size: calc(2rem + 2vw);
-    text-align: center;
+  font-family: "Salsa", cursive;
+  font-size: calc(2rem + 2vw);
+  text-align: center;
 }
 
 h2 {
-    margin: 1rem 0;
-    font-size: 1.5rem;
-    text-align: center;
-    font-weight: 500;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 500;
 }
 
 p {
-    margin: auto;
+  margin: auto;
 }
 
 .menu-container {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-item {
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  p:first-of-type {
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  img {
     width: 100%;
-    flex-direction: column;
-    margin-bottom: 1.5rem;
-    h2 {
-        margin-bottom: 1rem;
-    }
+    object-fit: cover;
+    height: calc(200px + 2rem);
+  }
 
-    p:first-of-type {
-        margin-top: -0.5rem;
-        margin-bottom: 0.5rem;
-        font-size: 1.2rem;
-    }
-
-    img {
-        width: 100%;
-        object-fit: cover;
-        height: calc(200px + 2rem);
-    }
-
-    @media screen and (min-width: 600px) {
-        flex-direction: row;
-        width: 50%;
-        padding: 1rem;
-        margin-bottom: 0;
-    }
+  @media screen and (min-width: 600px) {
+    flex-direction: row;
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 0;
+  }
 }
 
 .contact-option {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
 .home {
-    p {
-        margin-top: 1.5rem;
-    }
+  p {
+    margin-top: 1.5rem;
+  }
 }
 
 .menu {
-    h2 {
-        text-align: left;
-    }
+  h2 {
+    text-align: left;
+  }
 }
