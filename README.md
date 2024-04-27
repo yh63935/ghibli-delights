@@ -1,5 +1,5 @@
 <a name="readme-top"></a>
-# cafe-page-webpack
+# Ghibli Delights
 ## This is a cafe page centered around Ghibli Studio food. 
 
 <!-- TABLE OF CONTENTS -->
