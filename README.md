@@ -27,7 +27,7 @@
 ### Description
 I'm a huge fan of Ghibli Studio and if you haven't gathered from my blog-page project, food! This website is for a cafe (Ghibli Delights Cafe) that serves the food featured in Ghibli Studio movies. It's also responsive, so feel free to resize the screen if you'd like :) 
 
-[See live website hosted on Github Pages](https://yh63935.github.io/cafe-page-webpack/) 
+[See live website hosted on Github Pages](https://yh63935.github.io/ghibli-delights/) 
 
 ### Motivation
 I wanted to learn how to use Webpack and get experience in using it. This website uses Webpack to bundle its files and renders each page separately with its elements when the appropriate option in the nav bar is pressed. I wanted to focus on modularity and writing organized code for practice. 
@@ -70,7 +70,7 @@ Quick start:
 
 5. Open up index.html on your local to view your own copy
 
-6. Alternatively go to [https://yh63935.github.io/cafe-page-webpack/](https://yh63935.github.io/cafe-page-webpack/) to see a live demo hosted on Github Pages.
+6. Alternatively go to [https://yh63935.github.io/ghibli-delights/](https://yh63935.github.io/ghibli-delights/) to see a live demo hosted on Github Pages.
 
 <!-- CONTACT -->
 ## Contact
@@ -98,12 +98,6 @@ Image credits:
 * [https://wallpapers.com/wallpapers/studio-ghibli-howl-s-moving-castle-j40hqc63s09xvdtw.html
 ](https://wallpapers.com/wallpapers/studio-ghibli-howl-s-moving-castle-j40hqc63s09xvdtw.html
 )
-
-
-Other acknowledgements:
-* [https://github.com/othneildrew/Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-* [https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3](https://meakaakka.medium.com/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3)
-* [https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page)
 
 
 
